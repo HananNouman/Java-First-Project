@@ -1,5 +1,6 @@
 package com.rbk.project1;
 import java.util.Scanner;
+import java.util.Arrays;
 import java.util.concurrent.ThreadLocalRandom;
 
 
@@ -54,7 +55,36 @@ public class Myclass {
         }
     }
 
-//    public static int[] acceptAndReverse(int n){
-//
+//    public void acceptAndReverse(){
+//        Scanner dd = new Scanner(System.in);
+//        int[] vars = new int[5];
+//        for(int i = 4; i >=0; i--) {
+//            System.out.println("Enter next var: ");
+//            vars[i] = dd.nextInt();
+//        }
+//        System.out.println(Arrays.toString(vars));
 //    }
+
+    public void acceptAndReverse(){
+        Scanner dd = new Scanner(System.in);
+        int[] vars = new int[10];
+        for(int i = 0; i <5; i++) {
+            System.out.println("Enter next var: ");
+            vars[i] = dd.nextInt();
+            vars[(vars.length-1)-i] = vars[i];
+
+        }
+        System.out.println(Arrays.toString(vars));
+    }
+
+    public void repeatString(String str, int count) {
+        String res="";
+        for(int i = 0; i <count; i++) {
+            res = res+str;
+
+        }
+        System.out.println(res);
+    }
+
+
 }

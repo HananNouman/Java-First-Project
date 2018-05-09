@@ -9,7 +9,9 @@ public class Main {
          Myclass myclass = new Myclass();
          myclass.printMsg("hi world");
         myclass.printMsg("hi world");
-        myclass.guessMyNumber();
+       //5 myclass.guessMyNumber();
+       // myclass.acceptAndReverse();
+        myclass.repeatString("dog", 0);
     }
 
 }
